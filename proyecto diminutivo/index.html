@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tracker de Lectura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Mi Biblioteca Virtual</h1>
+    </header>
+
+    <main class="container">
+        <!-- Formulario para agregar libros -->
+        <section class="form-section">
+            <h2>Agregar Nuevo Libro</h2>
+            <form id="libro-form">
+                <input type="text" id="titulo" placeholder="Título del libro" required>
+                <input type="text" id="autor" placeholder="Autor" required>
+                <input type="number" id="paginas" placeholder="Total de páginas" required>
+                <select id="estado">
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Leyendo">Leyendo</option>
+                    <option value="Terminado">Terminado</option>
+                </select>
+                <button type="submit">Guardar Libro</button>
+            </form>
+        </section>
+
+        <!-- Grilla donde se mostrarán los libros -->
+        <section class="grid-section">
+            <h2>Mis Libros</h2>
+            <div class="books-grid" id="books-grid">
+                <!-- Los libros se cargarán acá dinámicamente con JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Enlazamos la lógica del programa -->
+    <script src="app.js"></script>
+</body>
+</html>
